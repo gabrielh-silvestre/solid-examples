@@ -4,8 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
-    "test:watch": "jest --watchAll"
+    "test": "jest --silent",
+    "test:watch": "jest --watchAll",
+    "prebuild": "rm -rf dist",
+    "build": "tsc",
+    "solid:s": "npm run build && node dist/SingleResponsibility.js",
+    "solid:d": "npm run build && node dist/DependencyInversion.js"
   },
   "keywords": [],
   "author": "",
