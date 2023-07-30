@@ -30,11 +30,12 @@ solid-examples/
 |   |-- DependencyInversion.ts
 |
 |-- __tests__/
-|   |-- SinglePrinciple.test.ts
-|   |-- OpenClosed.test.ts
-|   |-- LiskovSubstitution.test.ts
-|   |-- InterfaceSegregation.test.ts
-|   |-- DependencyInversion.test.ts
+|    -- jest/
+|      |-- SinglePrinciple.test.ts
+|      |-- OpenClosed.test.ts
+|      |-- LiskovSubstitution.test.ts
+|      |-- InterfaceSegregation.test.ts
+|      |-- DependencyInversion.test.ts
 ```
 
 Cada arquivo dentro de `src/` representa um dos princípios SOLID e contém exemplos práticos em TypeScript que ilustram o princípio em questão. Por exemplo, `src/SinglePrinciple/` contém exemplos que seguem o Princípio da Responsabilidade Única.
@@ -86,7 +87,7 @@ npm test Dependency*
 
 ## Contribuindo
 
-Se você encontrar algum problema, tiver sugestões ou desejar adicionar mais exemplos, fique à vontade para abrir um _issue_. Sua contribuição é muito bem-vinda!
+Se você encontrar algum problema, tiver sugestões ou desejar adicionar mais exemplos, fique à vontade para abrir uma _issue_. Sua contribuição é muito bem-vinda!
 
 ## Referências
 

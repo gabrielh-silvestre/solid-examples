@@ -28,7 +28,7 @@ describe('Tests for SingleResponsability example', () => {
     '[getBalance] should be able to get random balances between 100 and 1000', async () => {
       // #### ARRANGE ####
       const sample = Array.from({ length: 20 });
-      const results = Promise.all(sample.map(() => getBalance())); // No problems for the context, all operations are inmemory and fast
+      const results = Promise.all(sample.map(() => getBalance())); // Sem problemas "esperar", pois a execução é rápida e em memória
 
       // #### ACT ####
       const balances = await results;
@@ -62,7 +62,7 @@ describe('Tests for SingleResponsability example', () => {
   describe('[Integration] Tests', () => {
     it.each([
       // #### ARRANGE ####
-      // Balance is always between 100 and 1000
+      // // O balanço da conta é sempre entre 10 e 1000
       ['conta paga', 10, 'USD'],
       ['saldo insuficiente', 1000, 'USD'],
       ['conta paga', 10, 'EUR'],
